@@ -1,13 +1,9 @@
 import { defineConfig } from 'vitepress'
 
-// GitHub Pages 项目站点部署在 /<repo>/ 子路径；本地开发保持 /
-// GITHUB_ACTIONS 环境变量由 CI 自动注入
-const base = process.env.GITHUB_ACTIONS
-  ? '/VoxVer-Launcher-docs/'
-  : '/'
-
 export default defineConfig({
-  base,
+  // 自定义域名（docs/public/CNAME → voxver.meow-studio.tech）服务在根路径，
+  // base 必须保持 /；若改回 <user>.github.io/<repo> 项目站点才需要 /<repo>/ 前缀
+  base: '/',
   title: 'VoxVer Launcher',
   head: [
     ['link', { rel: 'icon', href: '/logo-256.ico' }],
