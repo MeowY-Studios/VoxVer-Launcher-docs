@@ -98,7 +98,7 @@ Check the following list item by item:
 5. **Check for dependency mods** -- Some mods require dependency mods (such as Cloth Config, GeckoLib, etc.), so check the mod's description page
 6. **Confirm file integrity** -- An interrupted download may result in an incomplete mod file; try re-downloading
 
-### CurseForge / Modrinth download failed?
+### Modrinth download failed?
 
 **Possible Causes and Solutions**:
 
@@ -108,7 +108,11 @@ Check the following list item by item:
 | Download source unavailable | Go to **Settings** to switch the download source |
 | Blocked by firewall | Check your firewall or security software settings |
 | Insufficient disk space | Free up disk space and try again |
-| Repository service maintenance | Try again later; CurseForge and Modrinth occasionally undergo maintenance |
+| Repository service maintenance | Try again later; Modrinth occasionally undergoes maintenance |
+
+::: info About CurseForge
+CurseForge integration is currently **planned** (API key pending approval) and is not available in this version.
+:::
 
 ## Other
 
@@ -148,7 +152,7 @@ Before uninstalling, it is recommended to **export important instances** as a ba
 
 ### Does VoxVer Launcher support macOS or Linux?
 
-The current version supports **Windows** and **macOS** (ARM64 / x64 dual architecture). Linux version is in development.
+VoxVer Launcher currently supports **Windows**. macOS support is **planned** (ARM64 / x64 dual architecture), and Linux is also in planning. Stay tuned.
 
 ### How to update VoxVer Launcher?
 

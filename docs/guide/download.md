@@ -16,8 +16,8 @@ VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 |--------|------|---------|
 | `VoxVer Launcher Setup x.x.x.exe` | NSIS 安装程序（推荐） | Windows |
 | `VoxVer Launcher x.x.x.zip` | 便携版压缩包（免安装） | Windows |
-| `VoxVer Launcher-x.x.x-arm64.dmg` | macOS ARM64 安装包（推荐，Apple Silicon） | macOS (Apple Silicon) |
-| `VoxVer Launcher-x.x.x-x64.dmg` | macOS x64 安装包 | macOS (Intel) |
+| `VoxVer Launcher-x.x.x-arm64.dmg` | macOS ARM64 安装包（推荐，Apple Silicon） | macOS (Apple Silicon) | 计划中 |
+| `VoxVer Launcher-x.x.x-x64.dmg` | macOS x64 安装包 | macOS (Intel) | 计划中 |
 
 ::: tip 推荐
 普通用户建议下载 **NSIS 安装程序**，安装后会自动创建桌面快捷方式和开始菜单项，后续更新也更方便。
@@ -47,16 +47,10 @@ VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 
 ## macOS 安装步骤
 
-1. 根据你的 Mac 芯片类型下载对应的 DMG 文件：
-   - **Apple Silicon (M1/M2/M3/M4)**：下载 `arm64` 版本
-   - **Intel**：下载 `x64` 版本
-2. 双击打开 `.dmg` 文件
-3. 将 **VoxVer Launcher** 图标拖入 **Applications（应用程序）** 文件夹
-4. 首次打开时，如果系统提示「无法验证开发者」，请前往 **系统设置 → 隐私与安全性**，点击「仍要打开」
-5. VoxVer Launcher 会自动启动
+macOS 版本目前仍在 **计划开发中**，暂无可用安装包。我们将尽快完成 macOS 构建并发布，请持续关注 [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases)。
 
 ::: tip 提示
-macOS 版本功能与 Windows 版本完全一致。自 v0.6.4 起支持 macOS ARM64 和 x64 双架构构建。
+macOS 版本上线后将与 Windows 版本功能保持一致，计划支持 ARM64 / x64 双架构。
 :::
 
 ## 从源码构建
