@@ -16,8 +16,8 @@ Go to [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/release
 |-----------|-------------|----------|
 | `VoxVer Launcher Setup x.x.x.exe` | NSIS Installer (Recommended) | Windows |
 | `VoxVer Launcher x.x.x.zip` | Portable Version (No Install) | Windows |
-| `VoxVer Launcher-x.x.x-arm64.dmg` | macOS ARM64 Installer (Recommended, Apple Silicon) | macOS (Apple Silicon) |
-| `VoxVer Launcher-x.x.x-x64.dmg` | macOS x64 Installer | macOS (Intel) |
+| `VoxVer Launcher-x.x.x-arm64.dmg` | macOS ARM64 Installer (Recommended, Apple Silicon) | macOS (Apple Silicon) | Planned |
+| `VoxVer Launcher-x.x.x-x64.dmg` | macOS x64 Installer | macOS (Intel) | Planned |
 
 ::: tip Recommendation
 Regular users should download the **NSIS Installer** for automatic desktop shortcuts and start menu entries, making future updates easier.
@@ -47,16 +47,10 @@ The portable version does not create shortcuts or write to the registry. You nee
 
 ## macOS Installation
 
-1. Download the DMG file matching your Mac's chip type:
-   - **Apple Silicon (M1/M2/M3/M4)**: Download the `arm64` version
-   - **Intel**: Download the `x64` version
-2. Double-click to open the `.dmg` file
-3. Drag the **VoxVer Launcher** icon into the **Applications** folder
-4. On first launch, if macOS says "cannot be verified", go to **System Settings → Privacy & Security** and click "Open Anyway"
-5. VoxVer Launcher will start automatically
+The macOS version is currently **in planning** — no installer is available yet. We are working on the macOS build and will release it soon. Stay tuned on [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases).
 
 ::: tip
-The macOS version has the same features as the Windows version. macOS ARM64 and x64 dual-architecture builds have been supported since v0.6.4.
+The macOS release will be feature-complete with the Windows version and is planned to support ARM64 / x64 dual-architecture.
 :::
 
 ## Build from Source

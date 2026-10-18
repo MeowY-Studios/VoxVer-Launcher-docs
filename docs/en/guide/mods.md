@@ -4,13 +4,17 @@ title: "Mod Management"
 
 # Mod Management
 
-VoxVer Launcher features a powerful Mod management system that integrates **CurseForge** and **Modrinth** — two major mod repositories. It supports search, download, enable/disable, configuration editing, update detection, and more all in one place.
+VoxVer Launcher features a powerful Mod management system that integrates the **Modrinth** mod repository. It supports search, download, enable/disable, configuration editing, update detection, and more all in one place.
+
+::: info CurseForge Planned
+CurseForge integration is currently **planned** (API key pending approval). For now, Modrinth is the primary source.
+:::
 
 Since v0.6.2, the **Downloads** page features a multi-category view with top tabs for switching between "Vanilla", "Mod", "Modpack", "Datapack", "Resource Pack", "Shader Pack", and "Community Resources", making it easy to find what you need. This chapter covers every aspect of mod management.
 
 ## Search & Download
 
-VoxVer Launcher supports searching and downloading mods from both CurseForge and Modrinth, covering the vast majority of mainstream mods.
+VoxVer Launcher supports searching and downloading mods from Modrinth, covering the vast majority of mainstream mods. CurseForge integration is planned.
 
 ### Search Steps
 
@@ -78,9 +82,9 @@ VoxVer Launcher supports the following ModLoaders. Different ModLoaders correspo
 
 | ModLoader | Mod Ecosystem | Source Repositories | Notes |
 |-----------|-------------|-------------------|-------|
-| Fabric | Fabric-specific mods | CurseForge / Modrinth | Lightweight, large mod selection, fast loading |
-| Forge | Forge-specific mods | CurseForge / Modrinth | Well-established ecosystem, rich in large mods |
-| NeoForge | NeoForge-specific mods | CurseForge / Modrinth | Next-generation ecosystem, compatible with Forge mods |
+| Fabric | Fabric-specific mods | Modrinth (CurseForge planned) | Lightweight, large mod selection, fast loading |
+| Forge | Forge-specific mods | Modrinth (CurseForge planned) | Well-established ecosystem, rich in large mods |
+| NeoForge | NeoForge-specific mods | Modrinth (CurseForge planned) | Next-generation ecosystem, compatible with Forge mods |
 | Quilt | Quilt / Fabric mods | Modrinth | Compatible with most Fabric mods |
 
 ::: warning

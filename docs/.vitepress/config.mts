@@ -1,21 +1,26 @@
 import { defineConfig } from 'vitepress'
 
+// GitHub Pages 项目站点部署在 /<repo>/ 子路径；本地开发保持 /
+// GITHUB_ACTIONS 环境变量由 CI 自动注入
+const base = process.env.GITHUB_ACTIONS
+  ? '/VoxVer-Launcher-docs/'
+  : '/'
+
 export default defineConfig({
-  base: '/',
+  base,
   title: 'VoxVer Launcher',
   head: [
     ['link', { rel: 'icon', href: '/logo-256.ico' }],
-    ['meta', { name: 'theme-color', content: '#1a1a2e' }],
+    ['meta', { name: 'theme-color', content: '#14b8a6' }],
   ],
   description: 'VoxVer Launcher - 一个现代化的 Minecraft 启动器，基于 Electron + Vue 3 + TypeScript',
   titleTemplate: ':title - VoxVer',
   lastUpdated: true,
 
   locales: {
-    'zh': {
+    root: {
       label: '简体中文',
       lang: 'zh-CN',
-      link: '/',
       themeConfig: {
         outline: {
           label: '页面导航',
@@ -24,10 +29,6 @@ export default defineConfig({
           { text: '主页', link: '/' },
           { text: '指南', link: '/guide/' },
           { text: '下载', link: '/guide/download' },
-          {
-            text: 'GitHub',
-            link: 'https://github.com/MeowY-Studios/VoxVer-Launcher',
-          },
         ],
         docFooter: {
           prev: '上一篇',
@@ -74,7 +75,10 @@ export default defineConfig({
                 { text: '实例系统', link: '/guide/instances' },
                 { text: 'Java 设置', link: '/guide/java' },
                 { text: '全局设置', link: '/guide/settings' },
+                { text: '自定义路径', link: '/guide/custom-path' },
+                { text: '崩溃监控', link: '/guide/crash' },
                 { text: '常见问题', link: '/guide/faq' },
+                { text: '更新日志', link: '/guide/changelog' },
               ],
             },
           ],
@@ -113,10 +117,6 @@ export default defineConfig({
           { text: 'Home', link: '/en/' },
           { text: 'Guide', link: '/en/guide/' },
           { text: 'Download', link: '/en/guide/download' },
-          {
-            text: 'GitHub',
-            link: 'https://github.com/MeowY-Studios/VoxVer-Launcher',
-          },
         ],
         docFooter: {
           prev: 'Previous',
@@ -163,7 +163,10 @@ export default defineConfig({
                 { text: 'Instance System', link: '/en/guide/instances' },
                 { text: 'Java Settings', link: '/en/guide/java' },
                 { text: 'Global Settings', link: '/en/guide/settings' },
+                { text: 'Custom Paths', link: '/en/guide/custom-path' },
+                { text: 'Crash Monitor', link: '/en/guide/crash' },
                 { text: 'FAQ', link: '/en/guide/faq' },
+                { text: 'Changelog', link: '/en/guide/changelog' },
               ],
             },
           ],

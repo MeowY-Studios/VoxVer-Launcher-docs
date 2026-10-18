@@ -179,6 +179,22 @@ Switch the interface display language. Supports Simplified Chinese and English, 
 | Reduce Motion | Disable interface transition animations and particle effects | Off |
 | High Contrast Mode | Increase interface element contrast for visually impaired users | Off |
 
+## About & Check for Updates
+
+**Path**: Settings → Game → About
+
+The "About" page shows the launcher version and project info, along with a **"Check for Updates"** button.
+
+::: tip Standalone Update Page (v0.7.3+)
+Since v0.7.3, clicking "Check for Updates" no longer opens a popup but navigates to a **standalone full-screen update page** (`/update`):
+
+- **Banner**: Logo + current version + status pill (checking / up to date / update available), with a water ripple animation that follows the theme color
+- **Release notes**: Renders the latest GitHub Release notes as Markdown (content whitelist filtered)
+- **Action bar**: Check / Download / Cancel / Install / GitHub Releases link; download progress shows transferred / total size and real-time speed (MB/s)
+- Update detection uses a **dual-channel GitHub API version comparison**: the GitHub API conclusion takes priority, with `latest.yml` as fallback when it lags behind
+- Update state is recoverable: leaving and re-entering the update page still allows continuing download or install
+:::
+
 ## Reset Settings
 
 To restore all settings to their default values:

@@ -15,7 +15,7 @@ VoxVer Launcher 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打�
 - 微软正版登录（Device Code Flow）与离线模式双支持
 - 完整的 Minecraft 版本管理（正式版 / 快照 / 远古版 / 愚人节版）
 - Fabric / Forge / NeoForge / Quilt 四大 ModLoader 一键安装
-- 接入 CurseForge + Modrinth 双源，Mod 搜索、下载、管理一站式操作
+- 接入 Modrinth，Mod 搜索、下载、管理一站式操作（CurseForge 接入计划中）
 - 多分类下载视图（原版游戏 / Mod / 整合包 / 数据包 / 资源包 / 光影包 / 社区资源）
 - 实例隔离系统，支持从 HMCL / PCL2 外部启动器一键导入
 - P2P 实例分享，通过 6 位分享码或 voxver:// 协议链接一键分享
@@ -24,8 +24,8 @@ VoxVer Launcher 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打�
 - Design Token 设计体系 + 磨砂玻璃 UI 效果
 - 主题自定义，色盘编辑器打造个性化界面
 - 全局快捷键，快速启动游戏
-- 自动更新（GitHub Releases 检测 + 后台下载 + 一键安装）
-- 内置崩溃监控与日志分析
+- 自动更新（独立版本更新页，GitHub Releases 检测 + 可取消下载 + 一键安装）
+- 内置崩溃监控与崩溃分析（10 类崩溃特征识别，独立崩溃分析页面）
 - 数据备份与迁移
 - 自定义 .minecraft 路径
 - 国际化支持，简体中文和英文
@@ -53,7 +53,7 @@ VoxVer Launcher 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打�
 
 | 项目 | 最低要求 | 推荐配置 |
 |------|---------|---------|
-| 操作系统 | Windows 10 64 位 | Windows 10/11 64 位 / macOS |
+| 操作系统 | Windows 10 64 位 | Windows 10/11 64 位 |
 | 处理器 | x64 架构处理器 | x64 架构多核处理器 |
 | 内存 | 8 GB 及以上 | 16 GB 及以上 |
 | 磁盘空间 | 500 MB（启动器本身） | SSD，10 GB+（含游戏文件） |
@@ -65,7 +65,7 @@ VoxVer Launcher 启动器本身对硬件要求较低，但运行 Minecraft 游�
 :::
 
 ::: tip 系统支持
-当前版本已支持 **Windows** 和 **macOS** 平台。Linux 版本正在开发计划中，敬请期待。
+当前版本已支持 **Windows** 平台。macOS 版本仍在 **计划中**，Linux 版本也在开发计划中，敬请期待。
 :::
 
 ## 遇到问题？

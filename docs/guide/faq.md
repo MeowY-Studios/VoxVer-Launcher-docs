@@ -98,7 +98,7 @@ title: "常见问题"
 5. **检查前置依赖** -- 部分 Mod 需要安装前置 Mod（如 Cloth Config、GeckoLib 等），请查看 Mod 的描述页面
 6. **确认文件完整** -- 下载中断可能导致 Mod 文件不完整，尝试重新下载
 
-### CurseForge / Modrinth 下载失败？
+### Modrinth 下载失败？
 
 **可能原因及解决方案**：
 
@@ -108,7 +108,11 @@ title: "常见问题"
 | 下载源不可用 | 进入「设置」切换下载源 |
 | 被防火墙拦截 | 检查防火墙或安全软件设置 |
 | 磁盘空间不足 | 清理磁盘空间后重试 |
-| 仓库服务维护 | 稍后重试，CurseForge 和 Modrinth 偶尔会进行维护 |
+| 仓库服务维护 | 稍后重试，Modrinth 偶尔会进行维护 |
+
+::: info 关于 CurseForge
+CurseForge 源目前处于 **计划接入** 阶段（API Key 申请中），当前版本暂不可用。
+:::
 
 ## 其他
 
@@ -148,7 +152,7 @@ title: "常见问题"
 
 ### VoxVer Launcher 支持 macOS 或 Linux 吗？
 
-VoxVer Launcher 已支持 **Windows** 和 **macOS** 平台（macOS ARM64 / x64 双架构）。Linux 版本正在开发计划中，敬请期待。
+VoxVer Launcher 已支持 **Windows** 平台。macOS 版本仍在 **计划中**（计划支持 ARM64 / x64 双架构），Linux 版本也在开发计划中，敬请期待。
 
 ### 如何更新 VoxVer Launcher？
 

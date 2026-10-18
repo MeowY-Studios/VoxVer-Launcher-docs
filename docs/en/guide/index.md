@@ -15,7 +15,7 @@ VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + T
 - Microsoft authentication (Device Code Flow) + offline mode dual support
 - Complete Minecraft version management (Release / Snapshot / Old Alpha / Old Beta / April Fools)
 - Fabric / Forge / NeoForge / Quilt ModLoader one-click installation
-- CurseForge + Modrinth dual-source mod search, download, and management
+- Modrinth integration for one-stop mod search, download, and management (CurseForge integration planned)
 - Multi-category download view (Vanilla / Mod / Modpack / Datapack / Resource Pack / Shader Pack / Community Resources)
 - Instance isolation system with one-click import from HMCL / PCL2 external launchers
 - P2P instance sharing via 6-digit code or voxver:// protocol link
@@ -24,8 +24,8 @@ VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + T
 - Design Token system + frosted glass UI effects
 - Theme customization with color palette editor for personalized UI
 - Global hotkeys for quick game launch
-- Auto-update (GitHub Releases detection + background download + one-click install)
-- Built-in crash monitoring and log analysis
+- Auto update (standalone update page, GitHub Releases detection + cancellable download + one-click install)
+- Built-in crash monitoring and crash analysis (10 crash signature categories, standalone crash analysis page)
 - Data backup and migration
 - Custom .minecraft path
 - Internationalization (Chinese and English)
@@ -53,7 +53,7 @@ Before installing VoxVer Launcher, please ensure your system meets the following
 
 | Item | Minimum Requirement | Recommended |
 |------|-------------------|-------------|
-| Operating System | Windows 10 64-bit | Windows 10/11 64-bit / macOS |
+| Operating System | Windows 10 64-bit | Windows 10/11 64-bit |
 | CPU | x64 architecture | x64 multi-core |
 | Memory | 8 GB or more | 16 GB or more |
 | Disk Space | 500 MB (launcher only) | SSD, 10 GB+ (with game files) |
@@ -65,7 +65,7 @@ VoxVer Launcher itself has low hardware requirements, but running Minecraft requ
 :::
 
 ::: tip System Support
-Current version supports **Windows** and **macOS**. Linux version is in development.
+Current version supports **Windows**. macOS support is **planned**, and Linux is also in planning. Stay tuned.
 :::
 
 ## Having Trouble?

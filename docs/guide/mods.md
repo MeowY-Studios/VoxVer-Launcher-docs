@@ -4,13 +4,17 @@ title: "Mod 管理"
 
 # Mod 管理
 
-VoxVer Launcher 内置了强大的 Mod 管理功能，接入 **CurseForge** 和 **Modrinth** 两大 Mod 仓库，支持搜索、下载、启用/禁用、配置编辑和更新检测等一站式操作。
+VoxVer Launcher 内置了强大的 Mod 管理功能，接入 **Modrinth** Mod 仓库，支持搜索、下载、启用/禁用、配置编辑和更新检测等一站式操作。
+
+::: info 计划接入 CurseForge
+CurseForge 源目前处于 **计划接入** 阶段（API Key 申请中），当前版本暂以 Modrinth 为主。
+:::
 
 自 v0.6.2 起，**下载** 页面采用多分类视图，顶部标签栏可在「原版游戏」「Mod」「整合包」「数据包」「资源包」「光影包」「社区资源」之间切换，方便快速定位所需内容。本章将详细介绍 Mod 管理的各个方面。
 
 ## 搜索与下载
 
-VoxVer Launcher 支持从 CurseForge 和 Modrinth 双源搜索和下载 Mod，覆盖绝大多数主流 Mod。
+VoxVer Launcher 支持从 Modrinth 搜索和下载 Mod，覆盖绝大多数主流 Mod。CurseForge 源计划接入中。
 
 ### 搜索步骤
 
@@ -78,9 +82,9 @@ VoxVer Launcher 支持以下 ModLoader，不同 ModLoader 对应不同的 Mod �
 
 | ModLoader | Mod 生态 | 仓库来源 | 说明 |
 |-----------|---------|---------|------|
-| Fabric | Fabric 专属 Mod | CurseForge / Modrinth | 轻量级，Mod 数量多，加载速度快 |
-| Forge | Forge 专属 Mod | CurseForge / Modrinth | 老牌生态，大型 Mod 丰富 |
-| NeoForge | NeoForge 专属 Mod | CurseForge / Modrinth | 新版本生态，兼容 Forge Mod |
+| Fabric | Fabric 专属 Mod | Modrinth（CurseForge 计划中） | 轻量级，Mod 数量多，加载速度快 |
+| Forge | Forge 专属 Mod | Modrinth（CurseForge 计划中） | 老牌生态，大型 Mod 丰富 |
+| NeoForge | NeoForge 专属 Mod | Modrinth（CurseForge 计划中） | 新版本生态，兼容 Forge Mod |
 | Quilt | Quilt / Fabric Mod | Modrinth | 兼容大部分 Fabric Mod |
 
 ::: warning 注意

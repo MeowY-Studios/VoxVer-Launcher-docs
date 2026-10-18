@@ -13,9 +13,13 @@ When a game crash occurs, VoxVer Launcher automatically records the crash inform
 ### Steps
 
 1. Go to the **Home** page or **Settings** page
-2. Find and click the **"Crash Records"** entry
+2. Find and click the **"Crash Records"** entry, or go directly to the standalone **Crash Analysis page** (`/crash-analysis`)
 3. The crash record list shows all historical crash entries, sorted in reverse chronological order
 4. Click on a record to view the detailed crash analysis report
+
+::: tip Crash Analysis Page
+Since v0.7.1, VoxVer Launcher provides a standalone "Crash Analysis" page (`/crash-analysis`) with a report history list, severity labels, exception types and stack details. The launch page crash panel also shows error descriptions, possible causes and suggested solutions. Crash report parsing supports **10 crash signature categories**.
+:::
 
 ### Crash Report Contents
 
@@ -26,7 +30,9 @@ Each crash analysis report contains the following information:
 | Timestamp | The exact time the crash occurred | 2025-01-15 14:32:08 |
 | Game Version | Minecraft version at the time of the crash | 1.20.4 |
 | ModLoader | ModLoader and version in use | Fabric Loader 0.15.6 |
+| Severity | Crash severity label | Critical / Warning |
 | Error Type | Classification of the root cause | `java.lang.OutOfMemoryError` |
+| Stack Details | Exception type and call stack | `Exception in thread "Render thread"` |
 | Log Snippet | Key log excerpt surrounding the crash | `Exception in thread "Render thread"` |
 | Analysis Suggestions | Auto-generated repair suggestions | "Consider increasing the maximum memory to 4096MB" |
 
