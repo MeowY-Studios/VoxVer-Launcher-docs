@@ -8,6 +8,22 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
+## Planned Features (v0.8.0+)
+
+The following features are being planned and developed, and will be gradually released in subsequent versions:
+
+| Feature | Description | Expected Version |
+|---------|-------------|------------------|
+| Linux Support | Adapt for Linux platform | v0.8.0+ |
+| macOS Support | Adapt for macOS (v0.6.4 previously supported, re-planned after CI build issues) | v0.8.0+ |
+| CF Mod Download | CurseForge mod download support | v0.8.0+ |
+
+::: info Note
+The planned features above may be adjusted based on development progress and priorities. Actual release dates and feature details are subject to the actual version release.
+:::
+
+---
+
 ## v0.7.4 - 2026-10-21
 
 > **Theme: Multi-Account Card Stack & Loader Adapter Architecture**
@@ -505,50 +521,22 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
-## Planned Features (v0.8.0+)
+## ✅ Completed Features
 
-The following features are being planned and developed, and will be gradually released in subsequent versions:
-
-| Feature | Description | Expected Version |
-|---------|-------------|------------------|
-| Linux Support | Adapt for Linux platform | v0.8.0+ |
-
-### ✅ Completed Features
-
-| Feature | Completed Version |
-|---------|-------------------|
-| P2P Instance Sharing | v0.5.2 |
-| Theme Customization (Color Palette) | v0.5.2 |
-| Modpack Creation Tools | v0.5.2 |
-| Global Keyboard Shortcuts | v0.5.3 |
-| i18n Internationalization | v0.5.5 |
-| Language Switching | v0.5.5 |
-| Mod Auto-Update Detection | v0.5.5 |
-| UI Architecture Refactor (Settings Categorization) | v0.6.0 |
-| Theme System Refactor | v0.6.0 |
-| Launch Stability Fixes | v0.6.1 |
-| Download Reliability Enhancement | v0.6.1 |
-| File Integrity Verification | v0.6.1 |
-| Design Token System | v0.6.2 |
-| Frosted Glass UI Effect | v0.6.2 |
-| Splash Screen Optimization | v0.6.2 |
-| HomePage Refactor | v0.6.2 |
-| macOS Support | v0.6.4 |
-| Design System Completion + Component Library | v0.7.0 |
-| Multiplayer Settings | v0.7.0 |
-| i18n Full Completion | v0.7.0 |
-| Launch Enhancement (Stop Abort + Corrupted File Detection) | v0.7.0 |
-| Crash Analysis System | v0.7.1 |
-| XMCL Launch Core Integration | v0.7.1 |
-| Automatic Java Selection (8/11/17/21/25) | v0.7.1 |
-| Lumin UI/UX Design System | v0.7.1 |
-| Dual-Channel Update Check (GitHub API Version Comparison) | v0.7.2 |
-| Standalone Update Page + Cancel Download | v0.7.3 |
-| Multi-Account Card Stack + Loader Adapters + Dark Theme Boost | v0.7.4 |
-
-::: info Note
-The planned features above may be adjusted based on development progress and priorities. Actual release dates and feature details are subject to the actual version release.
-:::
+| Completed Version | Features |
+|-------------------|----------|
+| v0.5.2 | P2P Instance Sharing, Theme Customization (Color Palette), Modpack Creation Tools |
+| v0.5.3 | Global Keyboard Shortcuts |
+| v0.5.5 | i18n Internationalization, Language Switching, Mod Auto-Update Detection |
+| v0.6.0 | UI Architecture Refactor (Settings Categorization), Theme System Refactor |
+| v0.6.1 | Launch Stability Fixes, Download Reliability Enhancement, File Integrity Verification |
+| v0.6.2 | Design Token System, Frosted Glass UI Effect, Splash Screen Optimization, HomePage Refactor |
+| v0.6.4 | macOS Support (⚠️ reverted due to CI build issues, see "Planned" above) |
+| v0.7.0 | Design System Completion + Component Library, Multiplayer Settings, i18n Full Completion, Launch Enhancement (Stop Abort + Corrupted File Detection) |
+| v0.7.1 | Crash Analysis System, XMCL Launch Core Integration, Automatic Java Selection (8/11/17/21/25), Lumin UI/UX Design System |
+| v0.7.2 | Dual-Channel Update Check (GitHub API Version Comparison) |
+| v0.7.3 | Standalone Update Page + Cancel Download |
+| v0.7.4 | Multi-Account Card Stack + Loader Adapters + Dark Theme Boost |
 
 ::: tip Contributing
 If you wish to contribute code or suggest features for VoxVer Launcher, feel free to submit a Pull Request or Issue on [GitHub](https://github.com/MeowY-Studios/VoxVer-Launcher).

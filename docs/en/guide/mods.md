@@ -10,7 +10,7 @@ VoxVer Launcher features a powerful Mod management system that integrates the **
 CurseForge integration is currently **planned** (API key pending approval). For now, Modrinth is the primary source.
 :::
 
-Since v0.6.2, the **Downloads** page features a multi-category view with top tabs for switching between "Vanilla", "Mod", "Modpack", "Datapack", "Resource Pack", "Shader Pack", and "Community Resources", making it easy to find what you need. This chapter covers every aspect of mod management.
+Since v0.6.2, the **Downloads** page features a multi-category view with a left sidebar for switching between "Vanilla", "Mod", "Modpack", "Datapack", "Resource Pack", "Shader Pack", and "Community Resources", making it easy to find what you need. This chapter covers every aspect of mod management.
 
 ## Search & Download
 

@@ -109,7 +109,7 @@ From the VoxVer Launcher home page, click the launch area next to the **"Downloa
 4. Wait for the progress bar to complete; the game window will open automatically
 
 ::: tip
-During the launch process, VoxVer Launcher will automatically verify game file integrity, download any missing dependencies, and assemble the correct launch parameters. This usually takes 5–30 seconds.
+During the launch process, VoxVer Launcher will automatically verify game file integrity, download any missing dependencies, and assemble the correct launch parameters. This usually takes 5–30 seconds — actual startup time depends on your computer's configuration.
 :::
 
 ## Having Trouble?
