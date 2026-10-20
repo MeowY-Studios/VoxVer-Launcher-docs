@@ -2,18 +2,19 @@
 
 **VoxVer Launcher** — 一个现代化的 Minecraft 启动器
 
-[中文文档](https://nnkmn.github.io/VoxVer-Launcher-docs/) | [English Docs](https://nnkmn.github.io/VoxVer-Launcher-docs/en/)
+[中文文档](https://voxver.meow-studio.tech/) | [English Docs](https://voxver.meow-studio.tech/en/)
 
 ## ✨ 特性
 
 - 🔐 **微软正版登录** — Device Code Flow 认证，token 自动刷新，多账户切换
 - 🚀 **游戏启动** — XMCL 启动核心，Java 版本自动匹配，启动进度实时推送
 - 📦 **版本管理** — 多版本隔离、BMCLAPI 版本列表、一键安装/删除
-- 🔧 **ModLoader 安装** — Fabric / Forge / NeoForge / Quilt 一键安装
-- 🎮 **Mod 管理** — CurseForge + Modrinth 双源，搜索/下载/启用禁用/配置编辑
-- 🗂️ **实例系统** — 创建/导入/导出游戏实例，独立管理 Mod 和配置
+- 🔧 **ModLoader 安装** — Fabric / Forge / NeoForge / Quilt 一键安装，四加载器适配器架构
+- 🎮 **Mod 管理** — Modrinth 源搜索/下载/启用禁用/配置编辑（CurseForge 计划接入中）
+- 🗂️ **实例系统** — 创建/导入/导出游戏实例，独立管理 Mod 和配置（v0.7.4 起暂时停用）
+- 👥 **多账户管理** — 卡堆式多账户并存，快速切换，3D 皮肤预览
 - 🔗 **P2P 实例分享** — WebRTC 直连技术，6 位分享码一键分享
-- 🎨 **主题自定义** — 色盘编辑器，自定义主题配色方案
+- 🎨 **主题自定义** — 色盘编辑器，亮/暗双主题，Design Token 像素风设计系统
 - ⌨️ **全局快捷键** — 自定义全局快捷键，快速启动游戏
 - 💥 **崩溃分析** — 游戏崩溃自动捕获并解析崩溃报告（10 类崩溃特征识别）
 - 🔄 **自动更新** — 独立版本更新页，GitHub Releases 检测、可取消下载、一键安装
@@ -23,6 +24,7 @@
 
 | 版本 | 日期 | 主要变更 |
 |------|------|---------|
+| **v0.7.4** | 2026-10-21 | 多在线账户卡堆管理（3D 皮肤预览）、四加载器适配器架构（Forge/NeoForge/Fabric/Quilt 统一适配层）、暗色主题存在感增强、实例模块暂时停用 |
 | **v0.7.3 质量批次** | 2026-10-11 | i18n 词条修复（相对时间键名、中英差异键）、schema 冲突修复、tsc 类型修复、单元测试 278/278 全绿、样式死代码清理 |
 | **v0.7.3** | 2026-09-26 | 独立版本更新页（发布说明渲染、取消下载、进度速度）、水波纹横幅、检查更新双链路仲裁 |
 | **v0.7.2** | 2026-09-26 | 更新检查改为 GitHub API 版本对比双链路，检查结果全反馈、12 秒超时恢复 |
