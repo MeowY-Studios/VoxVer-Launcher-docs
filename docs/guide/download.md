@@ -50,7 +50,15 @@ VoxVer Launcher 的正式发布版本托管在 GitHub Releases 上。
 macOS 版本目前仍在 **计划开发中**，暂无可用安装包。我们将尽快完成 macOS 构建并发布，请持续关注 [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases)。
 
 ::: tip 提示
-macOS 版本上线后将与 Windows 版本功能保持一致，计划支持 ARM64 / x64 双架构。
+- macOS 版本上线后将与 Windows 版本功能保持一致，计划支持 ARM64 / x64 双架构。 
+:::
+
+## Linux 安装步骤
+
+Linux 版本目前仍在 **计划开发中**，暂无可用安装包。我们将尽快完成 Linux 构建并发布，请持续关注 [GitHub Releases](https://github.com/MeowY-Studios/VoxVer-Launcher/releases)。
+
+::: tip 提示
+- Linux 版本上线后将与 Windows 版本功能保持一致，计划支持 x64 架构。     
 :::
 
 ## 从源码构建
