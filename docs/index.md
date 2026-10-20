@@ -47,9 +47,9 @@ hero:
     <div class="feature-card feature-card-split">
       <div class="fc-text">
         <span class="icon">🎮</span>
-        <h3>自研启动核心</h3>
-        <p>自研启动流程为主、XMCL 核心兜底，双引擎保障稳定启动。Java 版本按 MC 版本自动匹配（8 / 11 / 17 / 21 / 25），LWJGL 2/3 自动区分运行时。文件完整性校验 + 多源下载（官方源 + BMCLAPI），启动进度实时推送。</p>
-        <span class="feature-tag">自研 + XMCL 兜底</span>
+        <h3>XMCL 启动核心</h3>
+        <p>基于成熟稳定的 XMCL 核心驱动启动流程。Java 版本按 MC 版本自动匹配（8 / 11 / 17 / 21 / 25），LWJGL 2/3 自动区分运行时。文件完整性校验 + 多源下载（官方源 + BMCLAPI），启动进度实时推送。</p>
+        <span class="feature-tag">XMCL 核心驱动</span>
       </div>
       <div class="fc-terminal" aria-hidden="true">
         <div class="term-bar"><i></i><i></i><i></i><span>launch.log</span></div>

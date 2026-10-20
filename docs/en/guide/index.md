@@ -39,7 +39,7 @@ VoxVer Launcher is a modern Minecraft launcher built with **Electron + Vue 3 + T
 | [Account Management](/en/guide/accounts) | Microsoft login, offline mode, multi-account switching | Users managing multiple accounts |
 | [Version Management](/en/guide/versions) | Version install, isolation, ModLoader installation | Users managing multiple versions |
 | [Mod Management](/en/guide/mods) | Search, download, enable/disable, config editing | Mod users |
-| [Instance System](/en/guide/instances) | Create, import, export, independent environment management | Users needing environment isolation |
+| [Instance System](/en/guide/instances) | Create, import, export, independent environment management (temporarily disabled since v0.7.4) | Users needing environment isolation |
 | [Java Settings](/en/guide/java) | Auto-detect, manual config, memory tuning | Users with Java issues |
 | [Global Settings](/en/guide/settings) | General, appearance, advanced settings | Users wanting personalization |
 | [Custom Game Path](/en/guide/custom-path) | Game directory, multi-launcher coexistence | Users needing custom storage |

@@ -4,6 +4,10 @@ title: "Instance System"
 
 # Instance System
 
+::: warning Temporarily Disabled Since v0.7.4
+Starting from v0.7.4, the instance module is temporarily disabled and the instances page shows a "Not Available Yet" placeholder. Existing instance data is unaffected and the module will return in a future release. This page is kept for reference and describes the module's behavior once restored.
+:::
+
 The instance system is one of the core features of VoxVer Launcher. It allows you to create completely independent Minecraft environments for different playstyles. Each instance has its own game version, mods, configurations, and saves, all isolated from one another. This chapter covers instance creation, import, export, and the isolation mechanism in detail.
 
 ## Create Instance

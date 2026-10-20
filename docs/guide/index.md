@@ -39,7 +39,7 @@ VoxVer Launcher 是一款基于 **Electron + Vue 3 + TypeScript** 技术栈打�
 | [账户管理](/guide/accounts) | 微软登录、离线模式、多账户切换 | 需要管理多个账户的用户 |
 | [版本管理](/guide/versions) | 版本安装、隔离、ModLoader 安装 | 需要管理多个版本的用户 |
 | [Mod 管理](/guide/mods) | 搜索、下载、启用/禁用、配置编辑 | 使用 Mod 的玩家 |
-| [实例系统](/guide/instances) | 创建、导入、导出、独立环境管理 | 需要多环境隔离的玩家 |
+| [实例系统](/guide/instances) | 创建、导入、导出、独立环境管理（v0.7.4 起暂时停用） | 需要多环境隔离的玩家 |
 | [Java 设置](/guide/java) | 自动检测、手动配置、内存调优 | 遇到 Java 相关问题的用户 |
 | [全局设置](/guide/settings) | 常规、外观、高级设置详解 | 希望个性化配置的用户 |
 | [自定义游戏路径](/guide/custom-path) | 游戏目录设置、多启动器共存 | 需要自定义存储位置的用户 |

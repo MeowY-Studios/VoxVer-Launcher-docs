@@ -47,9 +47,9 @@ hero:
     <div class="feature-card feature-card-split">
       <div class="fc-text">
         <span class="icon">🎮</span>
-        <h3>Self-Developed Launch Core</h3>
-        <p>A self-developed launch pipeline with the XMCL core as fallback — a dual-engine design for reliable launches. Java versions are auto-matched to your MC version (8 / 11 / 17 / 21 / 25), with LWJGL 2/3 runtimes selected automatically. File integrity checks + multi-source downloads (official + BMCLAPI) with real-time launch progress.</p>
-        <span class="feature-tag">Self-developed + XMCL fallback</span>
+        <h3>XMCL Launch Core</h3>
+        <p>Powered by the proven, stable XMCL launch core. Java versions are auto-matched to your MC version (8 / 11 / 17 / 21 / 25), with LWJGL 2/3 runtimes selected automatically. File integrity checks + multi-source downloads (official + BMCLAPI) with real-time launch progress.</p>
+        <span class="feature-tag">Powered by XMCL core</span>
       </div>
       <div class="fc-terminal" aria-hidden="true">
         <div class="term-bar"><i></i><i></i><i></i><span>launch.log</span></div>
