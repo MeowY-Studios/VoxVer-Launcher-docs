@@ -8,6 +8,32 @@ This document records the feature changes, bug fixes and future plans for each v
 
 ---
 
+## v0.7.4 - 2026-10-21
+
+> **Theme: Multi-Account Card Stack & Loader Adapter Architecture**
+
+### ✨ New
+
+- **Multi-Account Card Stack** — The accounts page is rebuilt as a card-stack style multi-account manager: multiple Microsoft accounts coexist, quick switching, and 3D skin preview (SkinViewer3D); new standalone `MicrosoftLoginModal` login dialog
+- **Four-Loader Adapter Architecture** — Unified adapter layer for Forge / NeoForge / Fabric / Quilt (`BaseLoaderAdapter` + per-loader implementations); modloader service modularized
+
+### ⚠️ Changes
+
+- **Instance Module Temporarily Disabled** — The instances page now shows a "Not Available Yet" placeholder and related tests are rewritten; existing instance data is unaffected and the module will return in a future release
+
+### ✨ Improvements
+
+- **Stronger Dark Theme Presence** — Shadows replaced with brand-blue glow (sm / md / lg / xl); glass surfaces brightened (sidebar L=14→18, content 15→19, overlays 21→24); hover overlay 5%→8%, active 8%→12%; card inner highlights and title-bar glow now theme tokens, adapting to both light and dark themes
+- **Homepage Hero Card** — Removed the welcome title and background to avoid abrupt color blocks in light/dark modes
+- **i18n Copy Alignment** — zh-CN / en-US locale keys completed and updated
+
+### 🏗 Engineering
+
+- Added `electron/utils/version-meta.ts`, `electron/services/i18n.mod.service.ts`, and the `scripts/diagnose.mjs` diagnostic script
+- gh CLI integrated into the release flow
+
+---
+
 ## v0.7.3 Quality Fixes Batch - 2026-10-11
 
 > **Theme: Quality Fixes and Engineering Baseline Alignment**
@@ -518,6 +544,7 @@ The following features are being planned and developed, and will be gradually re
 | Lumin UI/UX Design System | v0.7.1 |
 | Dual-Channel Update Check (GitHub API Version Comparison) | v0.7.2 |
 | Standalone Update Page + Cancel Download | v0.7.3 |
+| Multi-Account Card Stack + Loader Adapters + Dark Theme Boost | v0.7.4 |
 
 ::: info Note
 The planned features above may be adjusted based on development progress and priorities. Actual release dates and feature details are subject to the actual version release.

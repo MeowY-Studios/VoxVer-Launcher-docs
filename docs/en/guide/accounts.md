@@ -70,16 +70,16 @@ Once logged in, you can view the skin on the account details page. The launcher 
 The skin cache helps reduce server requests and speeds up skin loading. Clearing the cache can force the launcher to re-download the latest skin, but it will require a one-time network download.
 :::
 
-## Multi-Account Switching
+## Multi-Account Management
 
-After adding multiple accounts, you can switch between them freely.
+Since v0.7.4, the accounts page is rebuilt as a **card-stack style multi-account manager**: multiple Microsoft accounts coexist as cards, each with a 3D skin preview (SkinViewer3D); click a card to quickly switch the active account. New accounts are added through the standalone `MicrosoftLoginModal` login dialog.
 
 ### Switching Accounts
 
-1. Go to the **Launch** page
-2. Click the current account avatar or name
-3. Select the account you want to use from the list
-4. The system will automatically switch to the selected account
+1. Go to the **Accounts** page
+2. Find the target account card in the stack
+3. Click the card to set it as the active account
+4. The Launch page will show the current account accordingly
 
 ## Remove Account
 
