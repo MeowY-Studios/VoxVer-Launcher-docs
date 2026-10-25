@@ -35,7 +35,8 @@ export default defineConfig({
           pattern: 'https://github.com/MeowY-Studios/VoxVer-Launcher-docs/edit/main/docs/:path',
         },
         footer: {
-          message: 'VoxVer Launcher 基于 MIT 协议开源',
+          message:
+            'VoxVer Launcher 基于 MIT 协议开源 · <a href="/guide/privacy">隐私声明</a> · <a href="/guide/terms">服务条款</a>',
           copyright: 'Copyright © 2024-2026 nnkmn (EccenTri)',
         },
         search: {
@@ -75,6 +76,8 @@ export default defineConfig({
                 { text: '崩溃监控', link: '/guide/crash' },
                 { text: '常见问题', link: '/guide/faq' },
                 { text: '更新日志', link: '/guide/changelog' },
+                { text: '隐私声明', link: '/guide/privacy' },
+                { text: '服务条款', link: '/guide/terms' },
               ],
             },
           ],
@@ -95,6 +98,8 @@ export default defineConfig({
                 { text: '崩溃监控', link: '/guide/crash' },
                 { text: '常见问题', link: '/guide/faq' },
                 { text: '更新日志', link: '/guide/changelog' },
+                { text: '隐私声明', link: '/guide/privacy' },
+                { text: '服务条款', link: '/guide/terms' },
               ],
             },
           ],
@@ -123,7 +128,8 @@ export default defineConfig({
           pattern: 'https://github.com/MeowY-Studios/VoxVer-Launcher-docs/edit/main/docs/:path',
         },
         footer: {
-          message: 'VoxVer Launcher is open source under the MIT License',
+          message:
+            'VoxVer Launcher is open source under the MIT License · <a href="/guide/privacy">Privacy Statement</a> · <a href="/guide/terms">Terms of Service</a>',
           copyright: 'Copyright © 2024-2026 nnkmn (EccenTri)',
         },
         search: {
@@ -163,6 +169,8 @@ export default defineConfig({
                 { text: 'Crash Monitor', link: '/en/guide/crash' },
                 { text: 'FAQ', link: '/en/guide/faq' },
                 { text: 'Changelog', link: '/en/guide/changelog' },
+                { text: 'Privacy Statement', link: '/guide/privacy' },
+                { text: 'Terms of Service', link: '/guide/terms' },
               ],
             },
           ],
@@ -183,6 +191,8 @@ export default defineConfig({
                 { text: 'Crash Monitor', link: '/en/guide/crash' },
                 { text: 'FAQ', link: '/en/guide/faq' },
                 { text: 'Changelog', link: '/en/guide/changelog' },
+                { text: 'Privacy Statement', link: '/guide/privacy' },
+                { text: 'Terms of Service', link: '/guide/terms' },
               ],
             },
           ],
@@ -214,6 +224,8 @@ export default defineConfig({
             { text: '崩溃监控', link: '/guide/crash' },
             { text: '常见问题', link: '/guide/faq' },
             { text: '更新日志', link: '/guide/changelog' },
+            { text: '隐私声明', link: '/guide/privacy' },
+            { text: '服务条款', link: '/guide/terms' },
           ],
         },
       ],
@@ -234,6 +246,8 @@ export default defineConfig({
             { text: '崩溃监控', link: '/guide/crash' },
             { text: '常见问题', link: '/guide/faq' },
             { text: '更新日志', link: '/guide/changelog' },
+            { text: '隐私声明', link: '/guide/privacy' },
+            { text: '服务条款', link: '/guide/terms' },
           ],
         },
       ],
