@@ -55,44 +55,7 @@ The macOS release will be feature-complete with the Windows version and is plann
 
 ## Build from Source
 
-If you are a developer or want to try the latest development version, you can build VoxVer Launcher from source.
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-- **Node.js** 24.x or later
-- **npm** 9.x or later (included with Node.js)
-- **Git** (latest version)
-
-### Clone & Install Dependencies
-
-```bash
-# Clone the repository
-git clone https://github.com/MeowY-Studios/VoxVer-Launcher.git
-cd VoxVer-Launcher
-
-# Install dependencies
-npm install
-```
-
-### Development Mode
-
-```bash
-# Start the development server (hot reload supported)
-npm run dev
-```
-
-In development mode, the launcher runs with hot-reload support for the frontend.
-
-### Build Installer
-
-```bash
-# Build Windows installer
-npm run build:win
-```
-
-The installer package will be output to the `build/` folder in the project root directory.
+Building from source, the development environment and dependency notes have moved to the developer docs — see the [Developer Guide](/en/dev/).
 
 ## First Launch Checklist
 

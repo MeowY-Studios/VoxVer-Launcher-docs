@@ -24,6 +24,7 @@ export default defineConfig({
         nav: [
           { text: '主页', link: '/' },
           { text: '指南', link: '/guide/' },
+          { text: '开发', link: '/dev/' },
           { text: '下载', link: '/guide/download' },
         ],
         docFooter: {
@@ -103,6 +104,16 @@ export default defineConfig({
               ],
             },
           ],
+          '/dev/': [
+            {
+              text: '开发文档',
+              items: [
+                { text: '开发指南', link: '/dev/' },
+                { text: '架构说明', link: '/dev/architecture' },
+                { text: '贡献指南', link: '/dev/contributing' },
+              ],
+            },
+          ],
         },
       },
     },
@@ -117,6 +128,7 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Guide', link: '/en/guide/' },
+          { text: 'Development', link: '/en/dev/' },
           { text: 'Download', link: '/en/guide/download' },
         ],
         docFooter: {
@@ -193,6 +205,16 @@ export default defineConfig({
                 { text: 'Changelog', link: '/en/guide/changelog' },
                 { text: 'Privacy Statement', link: '/guide/privacy' },
                 { text: 'Terms of Service', link: '/guide/terms' },
+              ],
+            },
+          ],
+          '/en/dev/': [
+            {
+              text: 'Developer Docs',
+              items: [
+                { text: 'Developer Guide', link: '/en/dev/' },
+                { text: 'Architecture', link: '/en/dev/architecture' },
+                { text: 'Contributing', link: '/en/dev/contributing' },
               ],
             },
           ],
