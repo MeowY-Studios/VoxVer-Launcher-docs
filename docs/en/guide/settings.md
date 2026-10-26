@@ -12,7 +12,7 @@ VoxVer Launcher provides a variety of global configuration options. Starting fro
 |--------------|-----------|-------------|
 | **Game** | Home, Account, About, Copyright, Game Account & Profile, JVM & Memory, Game Directory, Advanced | Game running, account management, and launch core configuration |
 | **Personalize** | Theme & Background, Main Interface, Language, Accessibility | Interface appearance, theme, language, and accessibility settings |
-| **Network** | Download, Multiplayer, Authentication Service | Download sources, online services, and auth configuration |
+| **Network** | Download, P2P Sharing, Multiplayer, Authentication Service | Download sources, online services, and auth configuration |
 | **Other** | Service & Feedback, Sponsor Us, Developer Options | Feedback channels, sponsorship, and developer tools |
 
 ::: tip Navigation
@@ -33,14 +33,35 @@ Specifies the storage location for Minecraft game files. All versions, mods, sav
 
 **Path**: Settings → Network → Download
 
+Since v0.7.5, download settings are grouped into "Service / Source / Download" cards.
+
 | Setting | Description | Default |
 |---------|-------------|---------|
-| Download Threads | Maximum concurrent download threads | 32 |
-| Download Source | Mirror source for downloading game files | BMCLAPI |
+| Download Source Strategy | Whether version files and assets come from the official or mirror source | Auto |
+| File Download Source | Mirror for game files and assets (BMCLAPI / Mojang Official) | BMCLAPI |
+| Version List Source | Source of version list metadata | BMCLAPI |
+| Concurrent Downloads | Number of parallel download tasks; 2 / 4 / 6 / 8 / 12 / 16 | 4 |
+| Max Download Threads | Threads per file; auto-selected when the toggle is on (default 8) | Auto |
+| Download Speed Limit | Speed cap, 0 means unlimited; unlimited when the toggle is on | Unlimited |
+| Max Retries | Retries after a failed download; automatic (5) when the toggle is on | 5 |
 
-### Download Threads
+### Download Source Strategy
 
-Controls the maximum number of concurrent downloads. Higher values may increase download speed but can cause network congestion. Recommended ranges by bandwidth:
+Since v0.7.5, the old "mirror speed test" entry is replaced by a "Download Source Strategy" dropdown:
+
+| Strategy | Behavior |
+|----------|----------|
+| Auto | The download service decides per file whether to use the official or mirror source |
+| Official First | Prefer the Mojang official source, falling back to the mirror on failure |
+| Mirror First | Prefer the BMCLAPI mirror, falling back to the official source on failure |
+
+The strategy is persisted into the download service and actually drives the download chain for version files and assets.
+
+### Threads and Speed Limit
+
+Max threads, speed limit and max retries are toggle-based: **on** means automatic, **off** allows manual tuning.
+
+Download threads control the maximum number of concurrent downloads. Higher values may increase download speed but can cause network congestion. Recommended ranges by bandwidth:
 - Below 100Mbps: 16-32 threads
 - 100-500Mbps: 32-64 threads
 - Above 500Mbps: 64-128 threads
@@ -51,6 +72,20 @@ Select a download mirror for game files and resources. Users in China are recomm
 
 ::: info v0.6.1 Download Source Optimization
 Starting from v0.6.1, the primary download source for asset files is changed to the official Minecraft asset server (`resources.download.minecraft.net`, no rate limit), with BMCLAPI as fallback. This fixes the issue where 3300+ asset files all returned 403 due to BMCLAPI rate limiting (10 requests per 60 seconds). Game core files still use the download source you selected in settings.
+:::
+
+## Service Connectivity Test
+
+**Path**: Settings → Network → Download → Service Connectivity Test
+
+Since v0.7.5 there is a dedicated service connectivity test page for troubleshooting download failures and login issues.
+
+1. The page first lists **10 services** across **download sources / version sources / mod platforms / login & update** (no request is sent yet)
+2. Click **"Start Test"** in the top-right corner; the launcher probes all services concurrently
+3. Each item shows **online status** and **latency (ms)**, with a reason for failures
+
+::: tip Note
+Results only reflect reachability in your current network environment. If a service is offline, try switching the download source strategy or retrying later.
 :::
 
 ## JVM & Memory
@@ -253,9 +288,14 @@ VoxVer Launcher supports customizable **global hotkeys** that work even when the
 
 | Shortcut | Function | Description |
 |----------|----------|-------------|
-| `Ctrl + Alt + L` | Show/Hide launcher window | Global effect |
-| `Ctrl + Alt + G` | Launch game | Launch the currently selected game directly |
-| `Ctrl + Alt + D` | Open download manager | Open download popup globally |
+| `Ctrl + Shift + L` | Quick launch game | Global; launches the currently selected game directly |
+| `Ctrl + Shift + H` | Show/Hide launcher window | Global |
+| `Ctrl + Shift + O` | Open home | Navigate to the launcher home page |
+| `Ctrl + ,` | Open settings | Navigate to the settings page |
+
+::: info v0.7.5 Fix
+Since v0.7.5 all four actions work, triggering brings the window to front and focuses it, and registration failures explicitly warn that the shortcut may be occupied by another program. These hotkeys are disabled by default and must be enabled in settings.
+:::
 
 ### Custom Hotkeys
 

@@ -24,6 +24,37 @@ The planned features above may be adjusted based on development progress and pri
 
 ---
 
+## v0.7.5 - 2026-10-27
+
+> **Theme: Service Connectivity Test & Download Source Strategy**
+
+### ✨ New
+
+- **Service Connectivity Test** — Settings → Download & Network → Service Connectivity Test. It first lists 10 services across download sources / version sources / mod platforms / login & update; clicking "Start Test" probes them concurrently and shows online status and latency per item, with a reason for failures
+- **Download Source Strategy** — The old mirror speed-test entry is replaced by a "Auto / Official First / Mirror First" dropdown; the strategy is persisted into the download service and actually drives the download chain, no longer a UI-only switch
+- **Global Hotkey Completion** — All four actions now work: quick launch game, open home, open settings, show/hide window; triggering brings the window to front and focuses it
+
+### ✨ Improvements
+
+- **Download & Network Settings Rework** — Grouped into "Service / Source / Download" cards; concurrent downloads changed to a dropdown; max threads, speed limit and max retries changed to toggles (on = automatic, off = manual)
+- **Advanced Settings Consistency** — Launch behavior, process priority and game window size changed from radio buttons to dropdowns
+- **PxSelect Dropdown Panel** — Teleported to body with fixed positioning, fixing clipping by scroll containers and content being covered after click
+- **Debug Options** — Only shown when debug mode is enabled
+
+### 🔧 Fixes
+
+- Global hotkeys did nothing after saving (home / settings / launch actions were not handled in the renderer)
+- Hotkey registration failures used to report success; now they explicitly warn the shortcut may be occupied by another program
+- Settings category switching kept the previous scroll position
+
+### 🏗 Engineering
+
+- Added `download:services:list` / `download:services:test` / `download:settings:set-mirror-strategy` IPC channels
+- Added `mirrorStrategy` to the download service; `shouldMirror` branches by strategy
+- Removed the `build-macos.yml` CI workflow; macOS builds remain planned
+
+---
+
 ## v0.7.4 - 2026-10-21
 
 > **Theme: Multi-Account Card Stack & Loader Adapter Architecture**
@@ -537,6 +568,7 @@ The planned features above may be adjusted based on development progress and pri
 | v0.7.2 | Dual-Channel Update Check (GitHub API Version Comparison) |
 | v0.7.3 | Standalone Update Page + Cancel Download |
 | v0.7.4 | Multi-Account Card Stack + Loader Adapters + Dark Theme Boost |
+| v0.7.5 | Service Connectivity Test (10 services) + Download Source Strategy + Global Hotkey Completion |
 
 ::: tip Contributing
 If you wish to contribute code or suggest features for VoxVer Launcher, feel free to submit a Pull Request or Issue on [GitHub](https://github.com/MeowY-Studios/VoxVer-Launcher).
